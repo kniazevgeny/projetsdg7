@@ -1,19 +1,19 @@
 <template lang="pug">
-	v-parallax(column, :src="require('../assets/img/1.png')", height="820", id="parallax1")
-		v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0.5)")
-			p {{$t('home.b1')}}
-			v-layout(wrap)
-				GChart(
-				type="GeoChart"
-				:data="map1Data"
-				:options="map1Options"
-				:settings="{mapsApiKey: 'AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE', packages: ['geochart']}"
-				style="height: 500px; width: 40vw; background: rgba(0, 0, 0, 0); fill: #000")
-				GChart(
-				type="PieChart"
-				:data="pie1Data"
-				:options="pie1Options"
-				style="height: 500px; width: 40vw; background: rgba(200, 200, 200, 0.5); fill: #000")
+	v-layout(column)
+		v-parallax(row, :src="require('../assets/img/1.png')", height="820", id="parallax1")
+			v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0.5)")
+				p {{$t('home.b1')}}
+				v-layout(wrap)
+					GChart(
+					type="GeoChart"
+					:data="map1Data"
+					:options="map1Options"
+					:settings="{mapsApiKey: apiKey, packages: ['geochart']}"
+					style="height: 500px; width: 40vw; background: rgba(0, 0, 0, 0); fill: #000")
+		v-layout(justify="space-around")
+			p Production de l`electricite par source en Russie
+			Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
+			Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
 
 
 </template>
@@ -25,11 +25,14 @@
     import {i18n} from "../plugins/i18n";
     // @ts-ignore
     import {GChart} from 'vue-google-charts'
+    import Doughnut_summary from "../components/Doughnut_summary.vue";
 
     Vue.component("GChart", GChart);
+    Vue.component("Doughnut_summary", Doughnut_summary);
 
     export default class Home extends Vue {
         name: string = "sss";
+        apiKey = "AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE";
         // Array will be automatically processed with visualization.arrayToDataTable function
         map1Data: object = [
             ['Country', 'Popularity'],
@@ -45,19 +48,26 @@
             colorAxis: {colors: ['yellow', 'red']},
             mapsApiKey: 'AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE'
         };
-        pie1Data: object = [
-            ['Source', 'Sales', 'Expenses', 'Profit'],
-            ['Charbon', 500, 400, 200],
-            ['Gas', 1170, 460, 250],
-            ['Eoliens', 660, 1120, 300],
-            ['Panneaux Photovoltaiques', 200, 540, 350]
-        ];
-        pie1Options: object = {
-            pieHole: 0.5,
-            backgroundColor: {fill: 'transparent'},
-            title: 'Sources de l`energie',
-            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-        }
+        Doughnut_summaryRussiaData:object = {
+            labels: ['Gaz naturel',
+                'Oil',
+                'Charbon',
+                'Nucléaire',
+                'Hydroenergie',
+                'Bioenergie et ?waste',
+                'Renouvelables'],
+		        data: [338334, 153963, 113581, 53279, 15908, 7801, 165]
+        };
+        Doughnut_summaryCanadaData:object = {
+            labels: ['Gaz naturel',
+                'Oil',
+                'Charbon',
+                'Nucléaire',
+                'Hydroenergie',
+                'Bioenergie et ?waste',
+                'Renouvelables'],
+            data: [100864, 99921, 17016, 26346, 33752, 13686, 2826]
+        };
     }
 </script>
 

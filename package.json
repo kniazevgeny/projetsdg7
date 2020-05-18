@@ -1,5 +1,5 @@
 {
-  "name": "RenouvelablesEnRussie",
+  "name": "renouvelablesenrussie",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,10 +11,12 @@
   "dependencies": {
     "@types/node": "^12.7.3",
     "axios": "^0.19.0",
+    "chart.js": "^2.9.3",
     "express": "^4.17.1",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "vue": "^2.6.10",
+    "vue-chartjs": "^3.5.0",
     "vue-class-component": "^7.0.2",
     "vue-cookie-law": "^1.10.0",
     "vue-facebook-signin-button": "^1.0.1",
