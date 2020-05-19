@@ -11,9 +11,31 @@
 					:settings="{mapsApiKey: apiKey, packages: ['geochart']}"
 					style="height: 500px; width: 40vw; background: rgba(0, 0, 0, 0); fill: #000")
 		v-layout(justify="space-around")
-			p Production de l`electricite par source en Russie
-			Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
-			Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
+			//charts
+			v-layout(class="hidden-sm-and-down")
+				p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
+				Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
+				p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
+				Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
+			//else
+		v-card(class="hidden-md-and-up")
+			v-window(v-model="windowSummary")
+				v-window-item.text-center
+					p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
+					Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="position: relative")
+				v-window-item.text-center
+					p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
+					Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="position: relative")
+			v-card-actions.justify-space-between(color="transparent")
+				v-btn(text='', @click='prev')
+					v-icon mdi-chevron-left
+				v-item-group.text-center(v-model='windowSummary', mandatory='')
+					v-item(v-for='n in length', :key='`btn-${n}`', v-slot:default='{ active, toggle }')
+						v-btn(:input-value='active', icon='', @click='toggle')
+							v-icon mdi-record
+				v-btn(text='', @click='next')
+					v-icon mdi-chevron-right
+
 
 
 </template>
@@ -30,9 +52,24 @@
     Vue.component("GChart", GChart);
     Vue.component("Doughnut_summary", Doughnut_summary);
 
+    @Component
     export default class Home extends Vue {
-        name: string = "sss";
+
         apiKey = "AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE";
+        windowSummary: number = 0;
+        length = 2;
+        n = 0;
+
+        next() {
+            this.windowSummary = this.windowSummary + 1 === this.length
+                ? 0
+                : this.windowSummary + 1
+        };
+        prev() {
+            this.windowSummary = this.windowSummary - 1 < 0
+                ? this.length - 1
+                : this.windowSummary - 1
+        };
         // Array will be automatically processed with visualization.arrayToDataTable function
         map1Data: object = [
             ['Country', 'Popularity'],
@@ -80,5 +117,9 @@
 		bottom: 0;
 		left: 0;
 		content: "";
+	}
+	.font{
+		font-family: "TTSupermolotNeue" !important;
+		font-weight: 600;
 	}
 </style>
