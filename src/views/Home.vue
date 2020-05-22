@@ -24,6 +24,7 @@
 				p.post Ce sont:
 					br
 					span •	L’énergie solaire
+
 					br
 					span •	L’énergie éolienne
 					br
