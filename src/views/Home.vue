@@ -12,8 +12,8 @@
 					style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000")
 		h2.headlinee.mt-7 Développement durable
 		v-layout(justify="space-around")
-			v-flex(sm1 xs1)
-			v-card.block-text(color="#fff" xs5 flat)
+			v-flex(xs1 sm1 md4 lg6)
+			v-card.block-text(color="#fff" xs5 md4 flat)
 				p.post Sur la proposition de l'Institut Français, j`ai choisi un thème d`actualité -le développement durable
 				p.post L'utilisation des combustibles fossiles est la façon la plus simple de les utiliser, car il s'agit d'un processus déjà bien établi et il est facile d'en tirer de l'énergie.
 				p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
@@ -39,7 +39,7 @@
 				p.post L'énergie hydraulique permet de fabriquer de l'électricité grâce à la force de l'eau qui dépend soit de la hauteur de la chute d'eau, soit du débit des fleuves et des rivières
 				p.post Quant a l`energie geothermique, elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Et. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
 				p.post Dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
-			v-flex(sm1 xs1)
+			v-flex(xs1 sm1 md4 lg6)
 
 		//TODO: Font Candara
 		v-layout(justify="space-around")
