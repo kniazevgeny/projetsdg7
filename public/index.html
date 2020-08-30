@@ -26,8 +26,32 @@
 			font-weight: 400;
 			font-style: normal;
 		}
+		@font-face {
+			font-family: 'Candara';
+			src: local('Candara Bold'), url('/static/Candarab.ttf') format('truetype');
+			font-weight: 600;
+			font-style: normal;
+		}
 	</style>
 	<script src="https://apis.google.com/js/api:client.js"></script>
+	<script src="./zooom.min.js"></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', function () {
+			new Zooom('img-zoom', {
+				padding: 80,
+				zIndex: 9,
+				animationTime: 300, // animation time in number
+				cursor: {
+					in: 'zoom-in',
+					out: 'zoom-out'
+				},
+				overlay: {
+					color: 'transparent', // hex or color-name
+					opacity: 50, // [10, 20, 34, ..., 100] maximum number 100
+				},
+			});
+		});
+	</script>
 </head>
 <body>
 <noscript>

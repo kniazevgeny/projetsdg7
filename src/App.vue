@@ -19,7 +19,6 @@
 						:settings="{mapsApiKey: 'AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE', packages: ['geochart']}"
 						style="height: 500px; width: 40vw; background: rgba(0, 0, 0, 0); fill: #000")
 						v-spacer
-			router-view(style="margin-top: -52px")
 </template>
 
 <script lang="ts">
