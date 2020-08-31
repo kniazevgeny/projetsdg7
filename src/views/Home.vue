@@ -14,7 +14,6 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                p.post Sur la proposition de l'Institut Français, j`ai choisi un thème d`actualité -le développement durable
                 p.post L'utilisation des combustibles fossiles est la façon la plus simple de les utiliser, car il s'agit d'un processus déjà bien établi et il est facile d'en tirer de l'énergie.
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Par exemple en 2018 la Canada a atteint 10.3% d`energie durable dans sa consommation d’énergie tandis que la Russie - seulement 0.21%.
