@@ -51,6 +51,7 @@
                     span  permet de fabriquer de l'électricité grâce à la force de l'eau qui dépend soit de la hauteur de la chute d'eau, soit du débit des fleuves et des rivières
                 p.post Quant a l`energie geothermique, elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Et. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
                 p.post Dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
+                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
             v-flex(xs1 sm1 md4 lg6)
 
         //TODO: Font Candara
