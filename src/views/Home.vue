@@ -84,7 +84,8 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km),
+                img(:src="require('../assets/img/geo-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km).
             v-flex(xs1 sm1 md4 lg6)
 
         h2.headlinee.mt-7 L'énergie des océans et des marées
