@@ -70,7 +70,7 @@
                 p.post Le problème majeur est que le coût de production des panneaux solaires est relativement élevé, par rapport aux combustibles fossiles. Un autre obstacle au développement est l'absence de lois et de politique gouvernementale claire dans ce domaine. En outre, l'expérience a montré que le transport des panneaux solaires vers des régions éloignées est également difficile et coûteux.
             v-flex(xs1 sm1 md4 lg6)
 
-        h2.headlinee.mt-7 Energie du vent
+        h2.headlinee.mt-7 Énergie du vent
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
@@ -209,8 +209,8 @@
                 'Oil',
                 'Charbon',
                 'Nucléaire',
-                'Hydroenergie',
-                'Bioenergie et ?waste',
+                'Hydroénergie',
+                'Bioénergie',
                 'Renouvelables'],
             data: [338334, 153963, 113581, 53279, 15908, 7801, 165]
         };
@@ -219,8 +219,8 @@
                 'Oil',
                 'Charbon',
                 'Nucléaire',
-                'Hydroenergie',
-                'Bioenergie et ?waste',
+                'Hydroénergie',
+                'Bioénergie',
                 'Renouvelables'],
             data: [100864, 99921, 17016, 26346, 33752, 13686, 2826]
         };
