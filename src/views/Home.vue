@@ -51,8 +51,78 @@
                     span  permet de fabriquer de l'électricité grâce à la force de l'eau qui dépend soit de la hauteur de la chute d'eau, soit du débit des fleuves et des rivières
                 p.post Quant a l`energie geothermique, elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Et. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
                 p.post Dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
-                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
             v-flex(xs1 sm1 md4 lg6)
+        h2.headlinee.mt-7 Réseau énergétique russe
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
+                p.post Pour surmonter les problèmes de la demande locale d'électricité, des systèmes autonomes de SER et de tourbe ont été inclus dans les projets du gouvernement en tant que sources d'énergie prometteuses.
+            v-flex(xs1 sm1 md4 lg6)
+
+        h2.headlinee.mt-7 L’énergie solaire
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                img(:src="require('../assets/img/sun-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.post La Russie dispose de vastes zones favorables à l’utilisation d’énergie solaire en particulier dans les régions du sud-ouest et du sud. Cela représente en moyenne 1 200-1 500 kWh par an. Les installations ne peuvent fonctionner efficacement que pendant 4 à 5 mois par an. Il n'est donc pas possible de remplacer toute l’énergie basée sur des générateurs diesel par des cellules solaires.
+                p.post Le problème majeur est que le coût de production des panneaux solaires est relativement élevé, par rapport aux combustibles fossiles. Un autre obstacle au développement est l'absence de lois et de politique gouvernementale claire dans ce domaine. En outre, l'expérience a montré que le transport des panneaux solaires vers des régions éloignées est également difficile et coûteux.
+            v-flex(xs1 sm1 md4 lg6)
+
+        h2.headlinee.mt-7 Energie du vent
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.post La Russie possède le plus grand potentiel éolien du monde.
+                p.post Dans les régions du nord de la Russie, ainsi que dans le sud-ouest et en Extrême-Orient soufflent des vents, dont la vitesse dépasse facilement 8 m/s à 100 m de hauteur.
+                p.post Théoriquement, le potentiel économique éolien pourrait atteindre 30 % de la production d'électricité du pays, alors qu`à ce jour, la part des parcs éoliens en Russie est inférieure à 0,1 % de la production totale d'électricité (APREN, 2016).
+                p.post Plusieurs facteurs entravent le développement du parc éolien. C`est, d`abord, le fait que la capacite de production du parc éolien est variable. Ensuite, l`l’installation des éoliennes à grande échelle nécessitent de vastes terrains. Même en Russie, les investisseurs sont confrontés à des problèmes liés au prix élevé des terrains. Enfin, en raison des obstacles administratifs, il n'est pas facile de transformer juridiquement des terres agricoles en terres industrielles.
+            v-flex(xs1 sm1 md4 lg6)
+        h2.headlinee.mt-7 Géothermie
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km),
+            v-flex(xs1 sm1 md4 lg6)
+
+        h2.headlinee.mt-7 L'énergie des océans et des marées
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                p.post Le nord de la Russie dispose d'importantes ressources marémotrices. La mer Blanche et la mer d'Okhotsk ont des marées parmi les plus hautes du monde, atteignant plus de 10 mètres.
+            v-flex(xs1 sm1 md4 lg6)
+
+        h2.headlinee.mt-7 Bioénergie
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles.
+                p.post Mais actuellement, les biocombustibles sont sous-développés. Le coût de la production de biocarburants est élevé, et il n'existe pas de mécanismes d’aide de la part de l`Etat, quant à leur utilisation.
+                p.post Le problème de tous les secteurs d'énergie renouvelable est le coût des projets qui reste supérieur à la moyenne mondiale. Cela est dû en partie à l'introduction récente de ces technologies et aux spécificités du pays (par exemple, un vaste territoire de la Russie, qui nécessite le transport de matériel sur de longues distances, ce qui augmente les coûts).
+                p.post Les deux principales questions sont, primo,
+                p.post -	Comment relier les installations aux communautés concentrées dans différentes parties du pays et, secundo,
+                p.post -	Comment effectuer la transition entre les systèmes énergétiques.
+                p.post Pour rendre l'industrie efficace, Il s`agit de mettre en place une réglementation claire, de réduire les tarifs de l'électricité pour les utilisateurs finaux et de garantir un accès non discriminatoire aux réseaux.
+                p.post Globalement, Le développement des SER, mis à part l'hydroélectricité et la bioénergie, est lent en Russie. A ce jour les sources traditionnelles de charbon, de pétrole et de gaz naturel dominent.
+                //картинка сравнения рф и канады, где основные виэ – гидро и биоэнергетика
+            v-flex(xs1 sm1 md4 lg6)
+        h2.headlinee.mt-7 Possibilités ultérieures
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                //Здесь раздел сократится, тк многое я проиллюстрирую и покажу картинкой
+                p.post Une des stratégies d'utilisation des meilleures ressources éoliennes de la Russie, situées sur la côte pacifique, c`est l`exportation d'électricité vers la Chine. Outre la Chine, il est possible d'exporter de l’Energie vers l'Europe. Cela pourrait aider l'UE à atteindre plus rapidement ses objectifs en matière d'énergies renouvelables, et la Russie pourrait bénéficier de l'émergence de l'industrie locale.
+                    p.post Le développement des technologies d'énergies renouvelables peut contribuer à la croissance économique, en créant des activités et des emplois.
+                p.post Par exemple, l'industrie hydroélectrique russe emploie aujourd'hui plus de 65 000 personnes, ce qui en fait le cinquième plus gros employeur au monde. Avec une augmentation de la part des SER, l'emploi total du secteur pourrait atteindre 1 million de personnes d'ici 2030.
+                p.post Par ailleurs, autour de chaque technologie d'énergie renouvelable, il existe tout un système de production et de vente qui crée de nombreuses opportunités commerciales.
+                p.post Avec la diffusion des énergies renouvelables, la Russie renforcerait son potentiel scientifique.
+                p.post Le pays pourrait produire des équipements pour l'utilisation des SER et devenir un exportateur compétitif. Or, leur élaboration prend du temps et peut être coûteuse. Par conséquent, la Russie pourrait opter pour l'importation des équipements et des technologies. Cependant, l`importation créerait également une dépendance et augmenterait le coût des services.
+                p.post Par rapport aux énergies fossiles, les énergies renouvelables peuvent apporter des avantages environnementaux importants, notamment, une baisse considérable de la pollution atmosphérique.
+                p.post En outre, la promotion de l’énergie durable pourrait diversifier le bilan énergétique du pays, réduire les coûts d'approvisionnement en énergie dans des régions éloignées et aider la Russie à respecter ses obligations internationales, comme celles recommandées (imposees ?) par la COP 21.
+            v-flex(xs1 sm1 md4 lg6)
+
 
         //TODO: Font Candara
         v-layout(justify="space-around")
