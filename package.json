@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "distribute": "vue-cli-service serve --mode development",
-    "start": "vue-cli-service  build"
+    "start": "node server.js"
   },
   "dependencies": {
     "@types/chart.js": "^2.9.20",
