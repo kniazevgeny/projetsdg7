@@ -1,6 +1,6 @@
 <template lang="pug">
     v-layout(column)
-        v-parallax(row, :src="require('../assets/img/1.png')", height="820", id="parallax1")
+        v-parallax(row, :src="require('../assets/img/1.webp')", height="820", id="parallax1")
             v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0)")
                 p {{$t('home.b1')}}
                 v-layout(wrap)
@@ -17,7 +17,7 @@
                 p.post L'utilisation des combustibles fossiles est la façon la plus simple de les utiliser, car il s'agit d'un processus déjà bien établi et il est facile d'en tirer de l'énergie.
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Par exemple en 2018 la Canada a atteint 10.3% d`energie durable dans sa consommation d’énergie tandis que la Russie - seulement 0.21%.
-                img(:src="require('../assets/img/energy-use.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/energy-use.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
@@ -32,7 +32,7 @@
                     span •	L’énergie hydraulique
                     br
                     span •	L’énergie géothermique
-                img(:src="require('../assets/img/renouvelables-explained.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/renouvelables-explained.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 //image-dialog(
                 //:full="require('../assets/img/renouvelables-explained.png')",
                 //:full-width="945",
@@ -56,7 +56,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/diesel-generators.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
                 p.post Pour surmonter les problèmes de la demande locale d'électricité, des systèmes autonomes de SER et de tourbe ont été inclus dans les projets du gouvernement en tant que sources d'énergie prometteuses.
             v-flex(xs1 sm1 md4 lg6)
@@ -65,7 +65,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/sun-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/sun-map.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.post La Russie dispose de vastes zones favorables à l’utilisation d’énergie solaire en particulier dans les régions du sud-ouest et du sud. Cela représente en moyenne 1 200-1 500 kWh par an. Les installations ne peuvent fonctionner efficacement que pendant 4 à 5 mois par an. Il n'est donc pas possible de remplacer toute l’énergie basée sur des générateurs diesel par des cellules solaires.
                 p.post Le problème majeur est que le coût de production des panneaux solaires est relativement élevé, par rapport aux combustibles fossiles. Un autre obstacle au développement est l'absence de lois et de politique gouvernementale claire dans ce domaine. En outre, l'expérience a montré que le transport des panneaux solaires vers des régions éloignées est également difficile et coûteux.
             v-flex(xs1 sm1 md4 lg6)
@@ -74,7 +74,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/wind-map.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.post La Russie possède le plus grand potentiel éolien du monde.
                 p.post Dans les régions du nord de la Russie, ainsi que dans le sud-ouest et en Extrême-Orient soufflent des vents, dont la vitesse dépasse facilement 8 m/s à 100 m de hauteur.
                 p.post Théoriquement, le potentiel économique éolien pourrait atteindre 30 % de la production d'électricité du pays, alors qu`à ce jour, la part des parcs éoliens en Russie est inférieure à 0,1 % de la production totale d'électricité (APREN, 2016).
@@ -84,7 +84,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/geo-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/geo-map.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km).
             v-flex(xs1 sm1 md4 lg6)
 
@@ -173,7 +173,7 @@
     export default class Home extends Vue {
 
         apiKey = "AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE";
-        windowSummary: Number = 0;
+        windowSummary: number = 0;
         length = 2;
         n = 0;
 

@@ -7,7 +7,7 @@
         Navbar
         Snackbar
         v-content
-            router-view
+            router-view(style="margin-top: -52px")
             //v-parallax(column, :src="require('./assets/img/2.jpg')", height="600", width="100vw", style="height: 700px")
                 v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0)")
                     v-layout(wrap, class="text-center")
