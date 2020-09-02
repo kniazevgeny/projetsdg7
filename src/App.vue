@@ -7,17 +7,13 @@
         Navbar
         Snackbar
         v-content
-            router-view(style="margin-top: -52px")
-            v-parallax(column, :src="require('./assets/img/2.jpg')", height="600", width="100vw", style="height: 700px")
+            router-view
+            //v-parallax(column, :src="require('./assets/img/2.jpg')", height="600", width="100vw", style="height: 700px")
                 v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0)")
                     v-layout(wrap, class="text-center")
                         v-spacer
                         GChart(
-                        type="GeoChart"
-                        :data="map1Data"
-                        :options="map1Options"
-                        :settings="{mapsApiKey: 'AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE', packages: ['geochart']}"
-                        style="height: 500px; width: 40vw; background: rgba(0, 0, 0, 0); fill: #000")
+                        type="GeoChart" :data="map1Data" :options="map1Options" :settings="{mapsApiKey: 'AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE', packages: ['geochart']}" style="height: 500px; width: 40vw; background: rgba(0, 0, 0, 0); fill: #000")
                         v-spacer
 </template>
 

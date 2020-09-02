@@ -122,27 +122,28 @@
                 p.post Le pays pourrait produire des équipements pour l'utilisation des SER et devenir un exportateur compétitif. Or, leur élaboration prend du temps et peut être coûteuse. Par conséquent, la Russie pourrait opter pour l'importation des équipements et des technologies. Cependant, l`importation créerait également une dépendance et augmenterait le coût des services.
                 p.post Par rapport aux énergies fossiles, les énergies renouvelables peuvent apporter des avantages environnementaux importants, notamment, une baisse considérable de la pollution atmosphérique.
                 p.post En outre, la promotion de l’énergie durable pourrait diversifier le bilan énergétique du pays, réduire les coûts d'approvisionnement en énergie dans des régions éloignées et aider la Russie à respecter ses obligations internationales, comme celles recommandées (imposees ?) par la COP 21.
+                v-layout(justify="space-around" class="hidden-sm-and-down")
+                    //charts
+                    v-layout()
+                        v-flex(column lg6).text-center
+                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
+                            Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
+                        v-flex(column lg2).text-center
+                        v-flex(column lg6).text-center
+                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
+                            Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
+                    //else
+                            v-icon mdi-chevron-right
             v-flex(xs1 sm1 md4 lg6)
-
-
-        //TODO: Font Candara
-        v-layout(justify="space-around")
-            //charts
-            v-layout(class="hidden-sm-and-down")
-                p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
-                Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
-                p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
-                Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
-            //else
         v-card(class="hidden-md-and-up")
             v-window(v-model="windowSummary")
-                v-window-item.text-center
+                v-window-item.text-center(style="position: absolute;")
                     p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
-                    Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="position: relative")
-                v-window-item.text-center
+                    Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: auto")
+                v-window-item.text-center(style="position: absolute;")
                     p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
-                    Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="position: relative")
-            v-card-actions.justify-space-between(color="transparent")
+                    Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: auto")
+            v-card-actions.justify-space-between
                 v-btn(text='', @click='prev')
                     v-icon mdi-chevron-left
                 v-item-group.text-center(v-model='windowSummary', mandatory='')
@@ -150,7 +151,8 @@
                         v-btn(:input-value='active', icon='', @click='toggle')
                             v-icon mdi-record
                 v-btn(text='', @click='next')
-                    v-icon mdi-chevron-right
+
+
 
 
 </template>
@@ -171,7 +173,7 @@
     export default class Home extends Vue {
 
         apiKey = "AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE";
-        windowSummary: number = 0;
+        windowSummary: Number = 0;
         length = 2;
         n = 0;
 
@@ -269,5 +271,13 @@
         font-size: 3rem;
         text-align: center;
         color: #444;
+    }
+    .v-window__container {
+        height: 515px!important;
+    }
+    .v-window__container--is-active {
+        height: 515px!important;
+        padding: 0;
+        margin: 0;
     }
 </style>
