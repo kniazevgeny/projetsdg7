@@ -21,17 +21,6 @@
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
-                p.post Ce sont:
-                    br
-                    span •	L’énergie solaire
-                    br
-                    span •	L’énergie éolienne
-                    br
-                    span •	La bioénergie
-                    br
-                    span •	L’énergie hydraulique
-                    br
-                    span •	L’énergie géothermique
                 img(:src="require('../assets/img/renouvelables-explained.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 //image-dialog(
                 //:full="require('../assets/img/renouvelables-explained.png')",
@@ -49,7 +38,16 @@
                 p.post
                     b L'énergie hydraulique
                     span  permet de fabriquer de l'électricité grâce à la force de l'eau qui dépend soit de la hauteur de la chute d'eau, soit du débit des fleuves et des rivières
-                p.post Quant a l`energie geothermique, elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Et. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
+                p.post Quant a
+                    b  l`energie geothermique
+                    span , elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
+            v-flex(xs1 sm1 md4 lg6)
+        h2.headlinee.mt-7 Comparaison de l'utilisation des ressources en Russie et au Canada
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
+                p.post To be written
+                br
                 p.post Dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
             v-flex(xs1 sm1 md4 lg6)
         h2.headlinee.mt-7 Réseau énergétique russe
