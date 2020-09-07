@@ -54,7 +54,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/diesel-generators.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
                 p.post Pour surmonter les problèmes de la demande locale d'électricité, des systèmes autonomes de SER et de tourbe ont été inclus dans les projets du gouvernement en tant que sources d'énergie prometteuses.
             v-flex(xs1 sm1 md4 lg6)
