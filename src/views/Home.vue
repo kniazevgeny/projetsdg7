@@ -1,5 +1,5 @@
 <template lang="pug">
-    v-layout(column)
+    v-layout(column  style="background-color: #f5f6f8;")
         v-parallax(row, :src="require('../assets/img/1.webp')", height="820", id="parallax1")
             v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0)")
                 p {{$t('home.b1')}}
@@ -18,6 +18,8 @@
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Par exemple en 2018 la Canada a atteint 10.3% d`energie durable dans sa consommation d’énergie tandis que la Russie - seulement 0.21%.
                 img(:src="require('../assets/img/energy-use.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.source
+                    a(href="https://ya.ru" target="_blank" rel="noreferrer") Source
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
@@ -277,5 +279,17 @@
         height: 515px!important;
         padding: 0;
         margin: 0;
+    }
+    .source {
+        text-align: center;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .source a {
+        font-weight: 300;
+        font-family: 'Candara';
+        font-style: italic;
+        color: #999!important;
+        text-decoration: underline;
     }
 </style>
