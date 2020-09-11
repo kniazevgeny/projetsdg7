@@ -109,6 +109,11 @@
             v-card.block-text(color="#fff" xs5 md4 flat)
                 p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles.
                 p.post Mais actuellement, les biocombustibles sont sous-développés. Le coût de la production de biocarburants est élevé, et il n'existe pas de mécanismes d’aide de la part de l`Etat, quant à leur utilisation.
+            v-flex(xs1 sm1 md4 lg6)
+        h2.headlinee.mt-7 Le problème de tous ses secteurs
+        v-layout(justify="space-around")
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs5 md4 flat)
                 p.post Le problème de tous les secteurs d'énergie renouvelable est le coût des projets qui reste supérieur à la moyenne mondiale. Cela est dû en partie à l'introduction récente de ces technologies et aux spécificités du pays (par exemple, un vaste territoire de la Russie, qui nécessite le transport de matériel sur de longues distances, ce qui augmente les coûts).
                 p.post Les deux principales questions sont, primo,
                 p.post -	Comment relier les installations aux communautés concentrées dans différentes parties du pays et, secundo,
