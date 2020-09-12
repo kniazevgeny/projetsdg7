@@ -94,12 +94,14 @@
                 p.source
                     a(href="https://lektsii.org/6-47909.html" target="_blank" rel="noreferrer") Source
                 p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km).
+                p.post La capacité géothermique installée, principalement située dans la partie orientale de la Russie, a atteint 86 MW fin 2015. L'une des tendances les plus importantes dans le développement de l'énergie géothermique du pays est la construction de centrales géothermiques binaires. Trois grandes centrales géothermiques sont en service au Kamchatka : deux d'entre elles de 12 MW et une de 50 MW de capacité totale installée.
             v-flex(xs1 sm1 md4 lg6)
 
         h2.headlinee.mt-7 L'énergie des océans et des marées
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
+                p.post Le potentiel économiquement réalisable de l'hydroélectricité est près de cinq fois supérieur à la capacité actuelle en exploitation, en particulier dans la partie orientale de la Sibérie. Pour les petites centrales hydroélectriques, le plus grand potentiel se trouve dans les parties centrale et orientale du pays.
                 p.post Le nord de la Russie dispose d'importantes ressources marémotrices. La mer Blanche et la mer d'Okhotsk ont des marées parmi les plus hautes du monde, atteignant plus de 10 mètres.
             v-flex(xs1 sm1 md4 lg6)
 
@@ -107,7 +109,8 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles.
+                p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles. Aujourd'hui, la Russie est devenue le cinquième producteur de pellets au monde, et le troisième exportateur de granulés de bois vers l'UE (environ 0,9 mégatonnes, Mt), après le Canada (1,6 Mt) et les États-Unis (1,9 Mt)
+                p.post La plus grande capacité de production de granulés installée dans le pays appartient à la société forestière Vyborgskaya. Leur usine, qui a une capacité de production annuelle de 1 Mt, est située dans la région de Leningrad. Ses besoins annuels en bois rond sont de 2,2 millions de m3 (Ekman & Co., 2013). Puisque 95% de la production de l'entreprise sont exportés.
                 p.post Mais actuellement, les biocombustibles sont sous-développés. Le coût de la production de biocarburants est élevé, et il n'existe pas de mécanismes d’aide de la part de l`Etat, quant à leur utilisation.
             v-flex(xs1 sm1 md4 lg6)
         h2.headlinee.mt-7 Le problème de tous ses secteurs

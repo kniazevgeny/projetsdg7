@@ -1,6 +1,6 @@
-# Frontend code template
+# Russie et renouvelables
 
-This template to be used for frontend applications. Written in Vue.js with Vuetify and Vuex set up it is ready to be used. Facebook. Google and Telegram login is included.
+This is frontend of the project "Renouvelables en Russie". Written in Vue.js with Vuetify and Vuex.
 
 ## Project setup
 ```
