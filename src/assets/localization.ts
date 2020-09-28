@@ -17,7 +17,7 @@ export const messages = {
     title: 'Frontend template',
     notFound: 'Page not found',
     home: {
-      b1: "ffr"
+      title: "La Russie, peut-elle atteindre le niveau du Canada en domaine énergie durable?"
     }
   },
 }

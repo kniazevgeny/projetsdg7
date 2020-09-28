@@ -1,21 +1,20 @@
 <template lang="pug">
     v-layout(column  style="background-color: #f5f6f8;")
-        v-parallax(row, :src="require('../assets/img/1.webp')", height="820", id="parallax1")
-            v-card(flat, style="width: 90%; margin-left: 5%; background: rgba(0, 0, 0, 0)")
-                p {{$t('home.b1')}}
-                v-layout(wrap)
-                    GChart(
-                    type="GeoChart"
-                    :data="map1Data"
-                    :options="map1Options"
-                    :settings="{mapsApiKey: apiKey, packages: ['geochart']}"
-                    style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000")
+        v-parallax(row, :src="require('../assets/img/1.webp')", :height="isMobile ? '660' : '830'", id="parallax1")
+            v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100%;")
+                v-layout(style="text-align: center; bottom: 10%; position: absolute; left: 0; right: 0;" wrap)
+                    v-spacer
+                    v-flex(xs12 md10 style="text-align: center")
+                        span.page-title {{$t('home.title')}}
+                    v-spacer
+                    // GChart(type="GeoChart" :data="map1Data" :options="map1Options" :settings="{mapsApiKey: apiKey, packages: ['geochart']}" style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000") a
         h2.headlinee.mt-7 Développement durable
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                p.post L'utilisation des combustibles fossiles est la façon la plus simple de les utiliser, car il s'agit d'un processus déjà bien établi et il est facile d'en tirer de l'énergie.
+                p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
+                p.post Découvrons à quel point cela est vrai pour la Russie et le Canada.
                 p.post Par exemple en 2018 la Canada a atteint 10.3% d`energie durable dans sa consommation d’énergie tandis que la Russie - seulement 0.21%.
                 img(:src="require('../assets/img/energy-use.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.source
@@ -151,6 +150,28 @@
                     //else
                             v-icon mdi-chevron-right
             v-flex(xs1 sm1 md4 lg6)
+
+        h2.headlinee.mt-7 Notre équipe époustouflante
+        v-layout(justify="space-around")
+            v-flex(xs0 sm2 lg3)
+            v-flex(xs12 sm8 lg6)
+                v-row(cols="12" style="width: 100%").mt-2.pb-10
+                    v-flex(xs4)
+                        v-card(flat color="transparent")
+                            center
+                              v-img(:src="require('../assets/img/team-design.png')" style="border-radius: 50%; width: 80%")
+                            center Designer principal
+                    v-flex(xs4)
+                        v-card(flat color="transparent")
+                            center
+                                v-img(:src="require('../assets/img/team-market.png')" style="border-radius: 50%; width: 80%")
+                            center Chef de file du marketing
+                    v-flex(xs4)
+                        v-card(flat color="transparent")
+                            center
+                                v-img(:src="require('../assets/img/team-dev.png')" style="border-radius: 50%; width: 80%")
+                            center Développeur principal
+            v-flex(xs0 sm2 lg3)
         v-card(class="hidden-md-and-up")
             v-window(v-model="windowSummary")
                 v-window-item.text-center(style="position: absolute;")
@@ -167,6 +188,7 @@
                         v-btn(:input-value='active', icon='', @click='toggle')
                             v-icon mdi-record
                 v-btn(text='', @click='next')
+
 
 
 
@@ -204,6 +226,10 @@
                 ? this.length - 1
                 : this.windowSummary - 1
         };
+
+        get isMobile() {
+            return window.innerWidth < 600;
+        }
 
         // Array will be automatically processed with visualization.arrayToDataTable function
         map1Data: object = [
@@ -307,5 +333,30 @@
         font-style: italic;
         color: #999!important;
         text-decoration: underline;
+    }
+    span.page-title {
+        width: 100%;
+        font-size: 3rem;
+        line-height: 130%;
+        display: inline;
+        background-color: white;
+        text-align: center;
+        font-family: 'TTSupermolotNeue',sans-serif;
+    }
+    @media screen and (max-width: 600px){
+        span.page-title {
+            font-size: 2.5rem;
+        }
+        .headlinee {
+            font-size: 2.2rem;
+        }
+    }
+    @media screen and (min-width: 1000px){
+        span.page-title {
+            font-size: 4.5rem;
+        }
+        .headlinee {
+            font-size: 3.5rem;
+        }
     }
 </style>
