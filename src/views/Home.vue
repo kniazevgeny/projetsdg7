@@ -160,17 +160,17 @@
                         v-card(flat color="transparent")
                             center
                               v-img(:src="require('../assets/img/team-design.webp')" style="border-radius: 50%; width: 80%")
-                            center Designer principal
+                            center(style="font-size: 130%;") Designer principal
                     v-flex(xs4)
                         v-card(flat color="transparent")
                             center
                                 v-img(:src="require('../assets/img/team-market.webp')" style="border-radius: 50%; width: 80%")
-                            center Chef de file du marketing
+                            center(style="font-size: 130%;") Chef de file du marketing
                     v-flex(xs4)
                         v-card(flat color="transparent")
                             center
                                 v-img(:src="require('../assets/img/team-dev.webp')" style="border-radius: 50%; width: 80%")
-                            center Développeur principal
+                            center(style="font-size: 130%;") Développeur principal
             v-flex(xs0 sm2 lg3)
         v-card(class="hidden-md-and-up")
             v-window(v-model="windowSummary")
