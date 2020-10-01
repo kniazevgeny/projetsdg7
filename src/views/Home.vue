@@ -15,12 +15,16 @@
                 p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Découvrons à quel point cela est vrai pour la Russie et le Canada.
-                p.post Par exemple en 2018 la Canada a atteint 10.3% d`energie durable dans sa consommation d’énergie tandis que la Russie - seulement 0.21%.
+                p.post
+                    span En 2017 
+                    a(href="https://trackingsdg7.esmap.org" target="_blank" rel="noreferrer") le Canada a atteint 23.1% d’énergie durable
+                    span  dans sa consommation d’énergie tandis que 
+                    a(href="https://trackingsdg7.esmap.org" target="_blank" rel="noreferrer") la Russie - seulement 3.3%
                 img(:src="require('../assets/img/energy-use.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.source
                     a(href="https://www.iea.org/" target="_blank" rel="noreferrer") Source
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
-                p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable.
+                p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable ou renouvelable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
                 img(:src="require('../assets/img/renouvelables-explained.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 //image-dialog(
@@ -100,8 +104,16 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
+                img(:src="require('../assets/img/hydro-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.source
+                    a(href="http://aenergy.ru/1524" target="_blank" rel="noreferrer") Source
                 p.post Le potentiel économiquement réalisable de l'hydroélectricité est près de cinq fois supérieur à la capacité actuelle en exploitation, en particulier dans la partie orientale de la Sibérie. Pour les petites centrales hydroélectriques, le plus grand potentiel se trouve dans les parties centrale et orientale du pays.
                 p.post Le nord de la Russie dispose d'importantes ressources marémotrices. La mer Blanche et la mer d'Okhotsk ont des marées parmi les plus hautes du monde, atteignant plus de 10 mètres.
+                img(:src="require('../assets/img/wave-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.source
+                    span(style="font-size: 85%; font-weight: light") La mer Blanche
+                    br
+                    a(href="http://carto.geogr.msu.ru/wavenergy/" target="_blank" rel="noreferrer") Source
                 p.post Parmi les sites potentiels pour les installations d'énergie marémotrice, on trouve Mezen et Tugur, qui ont un amplitude moyenne des marées de 5,5 m et offrent un potentiel combiné d'environ 22 GW, couvrant une zone de bassin de plus de 3 500 km2 (Gorlov, 2009). Le potentiel total de production marémotrice est estimé à environ 90 GW (Helston, 2012).
             v-flex(xs1 sm1 md4 lg6)
 
@@ -109,8 +121,14 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
+                img(:src="require('../assets/img/pellet-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                p.source
+                    a(href="https://epc.bioenergyeurope.org/about-pellets/pellets-statistics/world-pellet-map/" target="_blank" rel="noreferrer") Source
                 p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles. Aujourd'hui, la Russie est devenue le cinquième producteur de pellets au monde, et le troisième exportateur de granulés de bois vers l'UE (environ 0,9 mégatonnes, Mt), après le Canada (1,6 Mt) et les États-Unis (1,9 Mt)
-                p.post La plus grande capacité de production de granulés installée dans le pays appartient à la société forestière Vyborgskaya. Leur usine, qui a une capacité de production annuelle de 1 Mt, est située dans la région de Leningrad. Ses besoins annuels en bois rond sont de 2,2 millions de m3 (Ekman & Co., 2013). Puisque 95% de la production de l'entreprise sont exportés.
+                p.post
+                    span La plus grande capacité de production de granulés installée dans le pays appartient à 
+                    a(href="http://www.vfdc.ru/" target="_blank" rel="noreferrer") la société forestière Vyborgskaya.
+                    span  Leur usine, qui a une capacité de production annuelle de 1 Mt, est située dans la région de Leningrad. Ses besoins annuels en bois rond sont de 2,2 millions de m3 (Ekman & Co., 2013). Puisque 95% de la production de l'entreprise sont exportés.
                 p.post Mais actuellement, les biocombustibles sont sous-développés. Le coût de la production de biocarburants est élevé, et il n'existe pas de mécanismes d’aide de la part de l`Etat, quant à leur utilisation.
             v-flex(xs1 sm1 md4 lg6)
         h2.headlinee.mt-7 Le problème de tous ses secteurs
