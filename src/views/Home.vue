@@ -102,6 +102,7 @@
             v-card.block-text(color="#fff" xs5 md4 flat)
                 p.post Le potentiel économiquement réalisable de l'hydroélectricité est près de cinq fois supérieur à la capacité actuelle en exploitation, en particulier dans la partie orientale de la Sibérie. Pour les petites centrales hydroélectriques, le plus grand potentiel se trouve dans les parties centrale et orientale du pays.
                 p.post Le nord de la Russie dispose d'importantes ressources marémotrices. La mer Blanche et la mer d'Okhotsk ont des marées parmi les plus hautes du monde, atteignant plus de 10 mètres.
+                p.post Parmi les sites potentiels pour les installations d'énergie marémotrice, on trouve Mezen et Tugur, qui ont un amplitude moyenne des marées de 5,5 m et offrent un potentiel combiné d'environ 22 GW, couvrant une zone de bassin de plus de 3 500 km2 (Gorlov, 2009). Le potentiel total de production marémotrice est estimé à environ 90 GW (Helston, 2012).
             v-flex(xs1 sm1 md4 lg6)
 
         h2.headlinee.mt-7 Bioénergie
