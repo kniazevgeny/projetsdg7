@@ -1,6 +1,6 @@
 <template lang="pug">
     v-layout(column  style="background-color: #f5f6f8;")
-        v-parallax(row, :src="require('../assets/img/1.webp')", :height="isMobile ? '660' : '830'", id="parallax1")
+        v-parallax(row, :src="require('../assets/img/1.png')", :height="isMobile ? '660' : '790'", id="parallax1" style="height: 900px")
             v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100%;")
                 v-layout(style="text-align: center; bottom: 10%; position: absolute; left: 0; right: 0;" wrap)
                     v-spacer
@@ -27,10 +27,6 @@
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable ou renouvelable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
                 img(:src="require('../assets/img/renouvelables-explained.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
-                //image-dialog(
-                //:full="require('../assets/img/renouvelables-explained.png')",
-                //:full-width="945",
-                //:full-height="600")
                 p.post
                     b L'énergie solaire
                     span  correspond à l'électricité produite par des cellules photovoltaïques. Ces cellules reçoivent la lumière du Soleil et sont capables d'en transformer une partie en électricité.
@@ -51,7 +47,31 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                p.post To be written
+                v-card(class="hidden-md-and-up" flat style="width: 100%; padding: none")
+                    v-window(v-model="windowSummary")
+                        v-window-item.text-center(style="position: absolute;")
+                            p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
+                            Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: auto")
+                        v-window-item.text-center(style="position: absolute;")
+                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
+                            Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: auto")
+                    v-card-actions.justify-center
+                        v-item-group.text--center(v-model='windowSummary', mandatory='')
+                            v-item(v-for='n in length', :key='`btn-${n}`', v-slot:default='{ active, toggle }')
+                                v-btn(:input-value='active', icon='', @click='toggle')
+                                    v-icon radio_button_checked
+                p.headline.hidden-sm-and-down(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600; text-align: center").mb-0.pb-0 Production de l`electricite par source
+                v-layout(justify="space-around" class="hidden-sm-and-down")
+                    //charts
+                    v-layout()
+                        v-flex(column lg6).text-center
+                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;").mt-0 en Russie
+                            Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
+                        v-flex(column lg2).text-center
+                        v-flex(column lg6).text-center
+                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;").mt-0 en Canada
+                            Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
+                v-btn(text='', @click='next')
                 br
                 p.post Dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
             v-flex(xs1 sm1 md4 lg6)
@@ -156,18 +176,14 @@
                 p.post Le pays pourrait produire des équipements pour l'utilisation des SER et devenir un exportateur compétitif. Or, leur élaboration prend du temps et peut être coûteuse. Par conséquent, la Russie pourrait opter pour l'importation des équipements et des technologies. Cependant, l`importation créerait également une dépendance et augmenterait le coût des services.
                 p.post Par rapport aux énergies fossiles, les énergies renouvelables peuvent apporter des avantages environnementaux importants, notamment, une baisse considérable de la pollution atmosphérique.
                 p.post En outre, la promotion de l’énergie durable pourrait diversifier le bilan énergétique du pays, réduire les coûts d'approvisionnement en énergie dans des régions éloignées et aider la Russie à respecter ses obligations internationales, comme celles recommandées (imposees ?) par la COP 21.
-                v-layout(justify="space-around" class="hidden-sm-and-down")
-                    //charts
-                    v-layout()
-                        v-flex(column lg6).text-center
-                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
-                            Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
-                        v-flex(column lg2).text-center
-                        v-flex(column lg6).text-center
-                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
-                            Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
-                    //else
-                            v-icon mdi-chevron-right
+                p.headline.text-center(style="font-family: 'Candara'!important") Le monde dans dix ans..?
+                v-layout.justify-center
+                    video(width="50%" autoplay loop)
+                        source(:src="require('../assets/img/inst.mp4')" type="video/mp4")
+                p.source
+                    a(href="https://www.instagram.com/p/B82AtHanASH/?igshid=1r45spszjwdxb" target="_blank" rel="noreferrer") Source
+                //else
+                    v-icon mdi-chevron-right
             v-flex(xs1 sm1 md4 lg6)
 
         h2.headlinee.mt-7 Notre équipe époustouflante
@@ -191,22 +207,6 @@
                                 v-img(:src="require('../assets/img/team-dev.webp')" style="border-radius: 50%; width: 80%")
                             center(style="font-size: 130%;") Développeur principal
             v-flex(xs0 sm2 lg3)
-        v-card(class="hidden-md-and-up")
-            v-window(v-model="windowSummary")
-                v-window-item.text-center(style="position: absolute;")
-                    p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
-                    Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: auto")
-                v-window-item.text-center(style="position: absolute;")
-                    p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
-                    Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: auto")
-            v-card-actions.justify-space-between
-                v-btn(text='', @click='prev')
-                    v-icon mdi-chevron-left
-                v-item-group.text-center(v-model='windowSummary', mandatory='')
-                    v-item(v-for='n in length', :key='`btn-${n}`', v-slot:default='{ active, toggle }')
-                        v-btn(:input-value='active', icon='', @click='toggle')
-                            v-icon mdi-record
-                v-btn(text='', @click='next')
 
 
 
@@ -313,6 +313,11 @@
         padding: 40px 60px;
         clear: both;
         box-sizing: border-box;
+    }
+    @media screen and (max-width: 600px){
+        .block-text {
+            padding: 40px 30px;
+        }
     }
 
     .block-text p {
