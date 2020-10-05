@@ -333,7 +333,7 @@
     }
 
     .headlinee {
-        font-family: 'TT Supermolot Neue';
+        font-family: 'TTSupermolotNeue';
         font-size: 3rem;
         text-align: center;
         color: #444;
