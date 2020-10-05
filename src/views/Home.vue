@@ -267,7 +267,7 @@
         };
         Doughnut_summaryRussiaData: object = {
             labels: ['Gaz naturel',
-                'Oil',
+                'Pétrole',
                 'Charbon',
                 'Nucléaire',
                 'Hydroénergie',
@@ -277,7 +277,7 @@
         };
         Doughnut_summaryCanadaData: object = {
             labels: ['Gaz naturel',
-                'Oil',
+                'Pétrole',
                 'Charbon',
                 'Nucléaire',
                 'Hydroénergie',
