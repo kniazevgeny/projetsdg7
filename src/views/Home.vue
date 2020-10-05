@@ -178,7 +178,7 @@
                 p.post En outre, la promotion de l’énergie durable pourrait diversifier le bilan énergétique du pays, réduire les coûts d'approvisionnement en énergie dans des régions éloignées et aider la Russie à respecter ses obligations internationales, comme celles recommandées (imposees ?) par la COP 21.
                 p.headline.text-center(style="font-family: 'Candara'!important") Le monde dans dix ans..?
                 v-layout.justify-center
-                    video(width="50%" autoplay loop)
+                    video(:width="isMobile ? '100%' : '50%'" autoplay loop)
                         source(:src="require('../assets/img/inst.mp4')" type="video/mp4")
                 p.source
                     a(href="https://www.instagram.com/p/B82AtHanASH/?igshid=1r45spszjwdxb" target="_blank" rel="noreferrer") Source
