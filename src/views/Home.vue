@@ -10,7 +10,7 @@
                     // GChart(type="GeoChart" :data="map1Data" :options="map1Options" :settings="{mapsApiKey: apiKey, packages: ['geochart']}" style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000") a
         h2.headlinee.mt-7 Développement durable
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
@@ -46,7 +46,7 @@
                 p.post Quant a
                     b  l`energie geothermique
                     span , elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Comparaison de l'utilisation des ressources en Russie et au Canada
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
