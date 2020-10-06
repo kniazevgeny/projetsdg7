@@ -1,8 +1,8 @@
 <template lang="pug">
     v-layout(column  style="background-color: #f5f6f8;")
-        v-parallax(row, :src="require('../assets/img/1.png')", :height="isMobile ? '660' : '790'", id="parallax1" :style="isMobile ? 'height: 700px' : 'height: 900px'")
+        v-parallax(row, :src="require('../assets/img/' + imgNum)", :height="isMobile ? '560' : '790'", id="parallax1" :style="isMobile ? 'height: 680px' : 'height: 840px'")
             v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100%;")
-                v-layout(style="text-align: center; bottom: 10%; position: absolute; left: 0; right: 0;" wrap)
+                v-layout(style="text-align: center; bottom: 25%; position: absolute; left: 0; right: 0;" wrap)
                     v-spacer
                     v-flex(xs12 md10 style="text-align: center")
                         span.page-title {{$t('home.title')}}
@@ -10,8 +10,8 @@
                     // GChart(type="GeoChart" :data="map1Data" :options="map1Options" :settings="{mapsApiKey: apiKey, packages: ['geochart']}" style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000") a
         h2.headlinee.mt-7 Développement durable
         v-layout(justify="space-around")
-            v-flex(xs0 sm1 md4 lg6)
-            v-card.block-text(color="#fff" xs5 md4 flat)
+            v-flex(xs1 sm1 md4 lg6)
+            v-card.block-text(color="#fff" xs10 md4 flat)
                 p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Découvrons à quel point cela est vrai pour la Russie et le Canada.
@@ -42,24 +42,24 @@
                 p.post Quant a
                     b  l`energie geothermique
                     span , elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
-            v-flex(xs0 sm1 md4 lg6)
+            v-flex(xs1 sm1 md4 lg6)
         h2.headlinee.mt-7 Comparaison de l'utilisation des ressources en Russie et au Canada
+        v-card(class="hidden-md-and-up" flat style="width: 100%; padding: none")
+            v-window(v-model="windowSummary")
+                v-window-item.text-center(style="position: absolute;")
+                    p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
+                    Doughnut_summary#summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data")
+                v-window-item.text-center(style="position: absolute;")
+                    p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
+                    Doughnut_summary#summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" )
+            v-card-actions.justify-center
+                v-item-group.text--center(v-model='windowSummary', mandatory='')
+                    v-item(v-for='n in length', :key='`btn-${n}`', v-slot:default='{ active, toggle }')
+                        v-btn(:input-value='active', icon='', @click='toggle')
+                            v-icon radio_button_checked
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                v-card(class="hidden-md-and-up" flat style="width: 100%; padding: none")
-                    v-window(v-model="windowSummary")
-                        v-window-item.text-center(style="position: absolute;")
-                            p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
-                            Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: auto")
-                        v-window-item.text-center(style="position: absolute;")
-                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
-                            Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: auto")
-                    v-card-actions.justify-center
-                        v-item-group.text--center(v-model='windowSummary', mandatory='')
-                            v-item(v-for='n in length', :key='`btn-${n}`', v-slot:default='{ active, toggle }')
-                                v-btn(:input-value='active', icon='', @click='toggle')
-                                    v-icon radio_button_checked
                 p.headline.hidden-sm-and-down(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600; text-align: center").mb-0.pb-0 Production de l`electricite par source
                 v-layout(justify="space-around" class="hidden-sm-and-down")
                     //charts
@@ -221,6 +221,7 @@
     // @ts-ignore
     import {GChart} from 'vue-google-charts'
     import Doughnut_summary from "../components/Doughnut_summary.vue";
+    import {Watch} from "vue-property-decorator";
 
 
     Vue.component("GChart", GChart);
@@ -248,6 +249,11 @@
 
         get isMobile() {
             return window.innerWidth < 600;
+        }
+
+        get imgNum() {
+            let num = Math.floor(Math.random() * Math.floor(5));  // 0-4
+            return "1-" + num + ".png"
         }
 
         // Array will be automatically processed with visualization.arrayToDataTable function
@@ -382,5 +388,8 @@
         .headlinee {
             font-size: 3.5rem;
         }
+    }
+    #summary {
+        width: 100vw!important;
     }
 </style>
