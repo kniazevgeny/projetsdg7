@@ -1,13 +1,27 @@
-var express = require('express');
-var path = require('path');
-var compression = require('compression');
-var serveStatic = require('serve-static');
+const express = require('express');
+const bodyParser = require('body-parser');
+const compression = require('compression');
+const path = require('path');
 
-app = express();
+const PORT = process.env.PORT || 5000;
+
+const STATIC = path.resolve(__dirname, 'dist');
+const INDEX = path.resolve(STATIC, 'index.html');
+
+
+const app = express();
 app.use(compression());
-app.use(serveStatic(__dirname + "/dist"));
+app.use(bodyParser.urlencoded({extended: true}));
 
-var port = process.env.PORT || 5000;
-app.listen(port);
+// Static content
+app.use(express.static(STATIC));
 
-console.log('server started '+ port);
+// All GET request handled by INDEX file
+app.get('*', function (req, res) {
+    res.sendFile(INDEX);
+});
+
+// Start server
+app.listen(PORT, function () {
+    console.log('Server up and running on ', `http://localhost:${PORT}/`);
+});
