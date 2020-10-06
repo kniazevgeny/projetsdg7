@@ -101,7 +101,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/wind-map.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
                 p.source
                     a(href="https://ozlib.com/897401/fizika/ustoychivost_atmosfery_protsessy_rasseivaniya" target="_blank" rel="noreferrer") Source
                 p.post La Russie possède le plus grand potentiel éolien du monde.
