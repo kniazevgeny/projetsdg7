@@ -20,13 +20,13 @@
                     a(href="https://trackingsdg7.esmap.org" target="_blank" rel="noreferrer") le Canada a atteint 23.1% d’énergie durable
                     span  dans sa consommation d’énergie tandis que 
                     a(href="https://trackingsdg7.esmap.org" target="_blank" rel="noreferrer") la Russie - seulement 3.3%
-                img(:src="require('../assets/img/energy-use.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/energy-use.png')" data-action="zoom" width="100%" style="margin: auto" alt="Diagramme sur la production de l'energie").img-zoom
                 p.source
                     a(href="https://www.iea.org/" target="_blank" rel="noreferrer") Source
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable ou renouvelable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
-                img(:src="require('../assets/img/renouvelables-explained.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/renouvelables-explained.png')" data-action="zoom" width="100%" style="margin: auto" alt="Renouvelables: une schema simple").img-zoom
                 p.post
                     b L'énergie solaire
                     span  correspond à l'électricité produite par des cellules photovoltaïques. Ces cellules reçoivent la lumière du Soleil et sont capables d'en transformer une partie en électricité.
@@ -79,7 +79,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte des générateurs diesel").img-zoom
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
@@ -90,7 +90,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/sun-map.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/sun-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'energie solaire").img-zoom
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La Russie dispose de vastes zones favorables à l’utilisation d’énergie solaire en particulier dans les régions du sud-ouest et du sud. Cela représente en moyenne 1 200-1 500 kWh par an. Les installations ne peuvent fonctionner efficacement que pendant 4 à 5 mois par an. Il n'est donc pas possible de remplacer toute l’énergie basée sur des générateurs diesel par des cellules solaires.
@@ -101,7 +101,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte du vents").img-zoom
                 p.source
                     a(href="https://ozlib.com/897401/fizika/ustoychivost_atmosfery_protsessy_rasseivaniya" target="_blank" rel="noreferrer") Source
                 p.post La Russie possède le plus grand potentiel éolien du monde.
@@ -113,7 +113,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/geo-map.webp')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/geo-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de la geothermie").img-zoom
                 p.source
                     a(href="https://lektsii.org/6-47909.html" target="_blank" rel="noreferrer") Source
                 p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km).
@@ -124,12 +124,12 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/hydro-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/hydro-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'hydroenergie").img-zoom
                 p.source
                     a(href="http://aenergy.ru/1524" target="_blank" rel="noreferrer") Source
                 p.post Le potentiel économiquement réalisable de l'hydroélectricité est près de cinq fois supérieur à la capacité actuelle en exploitation, en particulier dans la partie orientale de la Sibérie. Pour les petites centrales hydroélectriques, le plus grand potentiel se trouve dans les parties centrale et orientale du pays.
                 p.post Le nord de la Russie dispose d'importantes ressources marémotrices. La mer Blanche et la mer d'Okhotsk ont des marées parmi les plus hautes du monde, atteignant plus de 10 mètres.
-                img(:src="require('../assets/img/wave-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/wave-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de marees").img-zoom
                 p.source
                     span(style="font-size: 85%; font-weight: light") La mer Blanche
                     br
@@ -141,7 +141,7 @@
         v-layout(justify="space-around")
             v-flex(xs1 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/pellet-map.png')" data-action="zoom" width="100%" style="margin: auto").img-zoom
+                img(:src="require('../assets/img/pellet-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Marche des pellets").img-zoom
                 p.source
                     a(href="https://epc.bioenergyeurope.org/about-pellets/pellets-statistics/world-pellet-map/" target="_blank" rel="noreferrer") Source
                 p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles. Aujourd'hui, la Russie est devenue le cinquième producteur de pellets au monde, et le troisième exportateur de granulés de bois vers l'UE (environ 0,9 mégatonnes, Mt), après le Canada (1,6 Mt) et les États-Unis (1,9 Mt)
@@ -194,17 +194,17 @@
                     v-flex(xs4)
                         v-card(flat color="transparent")
                             center
-                              v-img(:src="require('../assets/img/team-design.webp')" style="border-radius: 50%; width: 80%")
+                              v-img(:src="require('../assets/img/team-design.webp')" style="border-radius: 50%; width: 80%" alt="Designer principal")
                             center(style="font-size: 130%;") Designer principal
                     v-flex(xs4)
                         v-card(flat color="transparent")
                             center
-                                v-img(:src="require('../assets/img/team-market.webp')" style="border-radius: 50%; width: 80%")
+                                v-img(:src="require('../assets/img/team-market.webp')" style="border-radius: 50%; width: 80%" alt="Chef de file du marketing")
                             center(style="font-size: 130%;") Chef de file du marketing
                     v-flex(xs4)
                         v-card(flat color="transparent")
                             center
-                                v-img(:src="require('../assets/img/team-dev.webp')" style="border-radius: 50%; width: 80%")
+                                v-img(:src="require('../assets/img/team-dev.webp')" style="border-radius: 50%; width: 80%" alt="Développeur principal")
                             center(style="font-size: 130%;") Développeur principal
             v-flex(xs0 sm2 lg3)
 
