@@ -1,6 +1,6 @@
 <template lang="pug">
     v-layout(column  style="background-color: #f5f6f8;")
-        v-parallax(row, :src="require('../assets/img/' + imgNum)", :height="isMobile ? '560' : '790'", id="parallax1" :style="isMobile ? 'height: 680px' : 'height: 840px'")
+        v-parallax(row, :src="require('../assets/img/' + imgNum)", :height="isMobile ? '660' : '790'", id="parallax1" :style="isMobile ? 'height: 700px' : 'height: 840px'")
             v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100%;")
                 v-layout(style="text-align: center; bottom: 25%; position: absolute; left: 0; right: 0;" wrap)
                     v-spacer
