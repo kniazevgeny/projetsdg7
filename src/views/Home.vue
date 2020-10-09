@@ -82,7 +82,7 @@
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
-                p.post Pour surmonter les problèmes de la demande locale d'électricité, des systèmes autonomes de SER et de tourbe ont été inclus dans les projets du gouvernement en tant que sources d'énergie prometteuses.
+                p.post Pour surmonter les problèmes de la demande locale d'électricité, des systèmes autonomes de SER (sources d'énergies renouvelables) et de tourbe ont été inclus dans les projets du gouvernement en tant que sources d'énergie prometteuses.
             v-flex(xs1 sm1 md4 lg6)
 
         h2.headlinee.mt-7 L’énergie solaire
