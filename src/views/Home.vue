@@ -10,7 +10,7 @@
                     // GChart(type="GeoChart" :data="map1Data" :options="map1Options" :settings="{mapsApiKey: apiKey, packages: ['geochart']}" style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000") a
         h2.headlinee.mt-7 Développement durable
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs10 md4 flat)
                 p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Découvrons à quel point cela est vrai pour la Russie et le Canada.
@@ -41,7 +41,7 @@
                 p.post Quant a
                     b  l`energie geothermique
                     span , elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Comparaison de l'utilisation des ressources en Russie et au Canada
         v-card(class="hidden-md-and-up" flat style="width: 100%; padding: none")
             v-window(v-model="windowSummary")
@@ -57,7 +57,7 @@
                         v-btn(:input-value='active', icon='', @click='toggle')
                             v-icon radio_button_checked
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 p.headline.hidden-sm-and-down(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600; text-align: center").mb-0.pb-0 Production de l`electricite par source
                 v-layout(justify="space-around" class="hidden-sm-and-down")
@@ -73,32 +73,32 @@
                 v-btn(text='', @click='next')
                 br
                 p.post Parmi les énergies renouvelables dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Réseau énergétique russe
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte des générateurs diesel").img-zoom
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
                 p.post Pour surmonter les problèmes de la demande locale d'électricité, des systèmes autonomes de SER (sources d'énergies renouvelables) et de tourbe ont été inclus dans les projets du gouvernement en tant que sources d'énergie prometteuses.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
 
         h2.headlinee.mt-7 L’énergie solaire
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 img(:src="require('../assets/img/sun-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'energie solaire").img-zoom
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La Russie dispose de vastes zones favorables à l’utilisation d’énergie solaire en particulier dans les régions du sud-ouest et du sud. Cela représente en moyenne 1 200-1 500 kWh par an. Les installations ne peuvent fonctionner efficacement que pendant 4 à 5 mois par an. Il n'est donc pas possible de remplacer toute l’énergie basée sur des générateurs diesel par des cellules solaires.
                 p.post Le problème majeur est que le coût de production des panneaux solaires est relativement élevé, par rapport aux combustibles fossiles. Un autre obstacle au développement est l'absence de lois et de politique gouvernementale claire dans ce domaine. En outre, l'expérience a montré que le transport des panneaux solaires vers des régions éloignées est également difficile et coûteux.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
 
         h2.headlinee.mt-7 Énergie du vent
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte du vents").img-zoom
                 p.source
@@ -107,21 +107,21 @@
                 p.post Dans les régions du nord de la Russie, ainsi que dans le sud-ouest et en Extrême-Orient soufflent des vents, dont la vitesse dépasse facilement 8 m/s à 100 m de hauteur.
                 p.post Théoriquement, le potentiel économique éolien pourrait atteindre 30 % de la production d'électricité du pays, alors qu`à ce jour, la part des parcs éoliens en Russie est inférieure à 0,1 % de la production totale d'électricité (APREN, 2016).
                 p.post Plusieurs facteurs entravent le développement du parc éolien. C`est, d`abord, le fait que la capacite de production du parc éolien est variable. Ensuite, l`l’installation des éoliennes à grande échelle nécessitent de vastes terrains. Même en Russie, les investisseurs sont confrontés à des problèmes liés au prix élevé des terrains. Enfin, en raison des obstacles administratifs, il n'est pas facile de transformer juridiquement des terres agricoles en terres industrielles.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Géothermie
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 img(:src="require('../assets/img/geo-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de la geothermie").img-zoom
                 p.source
                     a(href="https://lektsii.org/6-47909.html" target="_blank" rel="noreferrer") Source
                 p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km).
                 p.post La capacité géothermique installée, principalement située dans la partie orientale de la Russie, a atteint 86 MW fin 2015. L'une des tendances les plus importantes dans le développement de l'énergie géothermique du pays est la construction de centrales géothermiques binaires. Trois grandes centrales géothermiques sont en service au Kamchatka : deux d'entre elles de 12 MW et une de 50 MW de capacité totale installée.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
 
         h2.headlinee.mt-7 L'énergie des océans et des marées
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 img(:src="require('../assets/img/hydro-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'hydroenergie").img-zoom
                 p.source
@@ -134,11 +134,11 @@
                     br
                     a(href="http://carto.geogr.msu.ru/wavenergy/" target="_blank" rel="noreferrer") Source
                 p.post Parmi les sites potentiels pour les installations d'énergie marémotrice, on trouve Mezen et Tugur, qui ont une amplitude moyenne des marées de 5,5 m et offrent un potentiel combiné d'environ 22 GW, couvrant une zone de bassin de plus de 3 500 km2 (Gorlov, 2009). Le potentiel total de production marémotrice est estimé à environ 90 GW (Helston, 2012).
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
 
         h2.headlinee.mt-7 Bioénergie
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 img(:src="require('../assets/img/pellet-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Marche des pellets").img-zoom
                 p.source
@@ -149,10 +149,10 @@
                     a(href="http://www.vfdc.ru/" target="_blank" rel="noreferrer") la société forestière Vyborgskaya.
                     span  Leur usine, qui a une capacité de production annuelle de 1 Mt, est située dans la région de Leningrad. Ses besoins annuels en bois rond sont de 2,2 millions de m3 (Ekman & Co., 2013). Puisque 95% de la production de l'entreprise sont exportés.
                 p.post Mais actuellement, les biocombustibles sont sous-développés. Le coût de la production de biocarburants est élevé, et il n'existe pas de mécanismes d’aide de la part de l`Etat, quant à leur utilisation.
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Le problème de tous ses secteurs
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 p.post Le problème de tous les secteurs d'énergie renouvelable est le coût des projets qui reste supérieur à la moyenne mondiale. Cela est dû en partie à l'introduction récente de ces technologies et aux spécificités du pays (par exemple, un vaste territoire de la Russie, qui nécessite le transport de matériel sur de longues distances, ce qui augmente les coûts).
                 p.post Les deux principales questions sont, primo,
@@ -161,10 +161,10 @@
                 p.post Pour rendre l'industrie efficace, Il s`agit de mettre en place une réglementation claire, de réduire les tarifs de l'électricité pour les utilisateurs finaux et de garantir un accès non discriminatoire aux réseaux.
                 p.post Globalement, Le développement des SER, mis à part l'hydroélectricité et la bioénergie, est lent en Russie. A ce jour les sources traditionnelles de charbon, de pétrole et de gaz naturel dominent.
                 //картинка сравнения рф и канады, где основные виэ – гидро и биоэнергетика
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Possibilités ultérieures
         v-layout(justify="space-around")
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 //Здесь раздел сократится, тк многое я проиллюстрирую и покажу картинкой
                 p.post Une des stratégies d'utilisation des meilleures ressources éoliennes de la Russie, situées sur la côte pacifique, c`est l`exportation d'électricité vers la Chine. Outre la Chine, il est possible d'exporter de l’Energie vers l'Europe. Cela pourrait aider l'UE à atteindre plus rapidement ses objectifs en matière d'énergies renouvelables, et la Russie pourrait bénéficier de l'émergence de l'industrie locale.
@@ -183,7 +183,7 @@
                     a(href="https://www.instagram.com/p/B82AtHanASH/?igshid=1r45spszjwdxb" target="_blank" rel="noreferrer") Source
                 //else
                     v-icon mdi-chevron-right
-            v-flex(xs1 sm1 md4 lg6)
+            v-flex(xs0 sm1 md4 lg6)
 
         h2.headlinee.mt-7 Notre équipe magnifique
         v-layout(justify="space-around")
