@@ -133,7 +133,7 @@
                     span(style="font-size: 85%; font-weight: light") La mer Blanche
                     br
                     a(href="http://carto.geogr.msu.ru/wavenergy/" target="_blank" rel="noreferrer") Source
-                p.post Parmi les sites potentiels pour les installations d'énergie marémotrice, on trouve Mezen et Tugur, qui ont un amplitude moyenne des marées de 5,5 m et offrent un potentiel combiné d'environ 22 GW, couvrant une zone de bassin de plus de 3 500 km2 (Gorlov, 2009). Le potentiel total de production marémotrice est estimé à environ 90 GW (Helston, 2012).
+                p.post Parmi les sites potentiels pour les installations d'énergie marémotrice, on trouve Mezen et Tugur, qui ont une amplitude moyenne des marées de 5,5 m et offrent un potentiel combiné d'environ 22 GW, couvrant une zone de bassin de plus de 3 500 km2 (Gorlov, 2009). Le potentiel total de production marémotrice est estimé à environ 90 GW (Helston, 2012).
             v-flex(xs1 sm1 md4 lg6)
 
         h2.headlinee.mt-7 Bioénergie
@@ -185,7 +185,7 @@
                     v-icon mdi-chevron-right
             v-flex(xs1 sm1 md4 lg6)
 
-        h2.headlinee.mt-7 Notre équipe époustouflante
+        h2.headlinee.mt-7 Notre équipe magnifique
         v-layout(justify="space-around")
             v-flex(xs0 sm2 lg3)
             v-flex(xs12 sm8 lg6)
