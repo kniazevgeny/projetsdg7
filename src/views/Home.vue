@@ -19,13 +19,13 @@
                     a(href="https://trackingsdg7.esmap.org" target="_blank" rel="noreferrer") le Canada a atteint 23.1% d’énergie durable
                     span  dans sa consommation d’énergie tandis que 
                     a(href="https://trackingsdg7.esmap.org" target="_blank" rel="noreferrer") la Russie - seulement 3.3%
-                img(:src="require('../assets/img/energy-use.png')" data-action="zoom" width="100%" style="margin: auto" alt="Diagramme sur la production de l'energie").img-zoom
+                img(:src="require('../assets/img/energy-use.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Diagramme sur la production de l'energie").img-zoom
                 p.source
                     a(href="https://www.iea.org/" target="_blank" rel="noreferrer") Source
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable ou renouvelable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
-                img(:src="require('../assets/img/renouvelables-explained.png')" data-action="zoom" width="100%" style="margin: auto" alt="Renouvelables: une schema simple").img-zoom
+                img(:src="require('../assets/img/renouvelables-explained.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Renouvelables: une schema simple").img-zoom
                 p.post
                     b L'énergie solaire
                     span  correspond à l'électricité produite par des cellules photovoltaïques. Ces cellules reçoivent la lumière du Soleil et sont capables d'en transformer une partie en électricité.
@@ -78,7 +78,7 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/diesel-generators.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte des générateurs diesel").img-zoom
+                img(:src="require('../assets/img/diesel-generators.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Carte des générateurs diesel").img-zoom
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La particularité du réseau énergétique russe est qu`il est décentralisé. Il y a au moins 900 générateurs diesel en Russie qui fournissent de l'énergie pour des zones peu peuplées. Ces générateurs sont vieux et inefficaces. Par conséquent, les coûts d`exploitation peuvent être extrêmement élevés - parfois de plus de 12 fois par rapport aux valeurs habituelles. En outre, ces territoires souffrent d'une mauvaise qualité de l'air.
@@ -89,7 +89,7 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/sun-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'energie solaire").img-zoom
+                img(:src="require('../assets/img/sun-map.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'energie solaire").img-zoom
                 p.source
                     a(href="https://www.irena.org/publications/2017/Apr/Renewable-Energy-Prospects-for-the-Russian-Federation-REmap-working-paper" target="_blank" rel="noreferrer") Source
                 p.post La Russie dispose de vastes zones favorables à l’utilisation d’énergie solaire en particulier dans les régions du sud-ouest et du sud. Cela représente en moyenne 1 200-1 500 kWh par an. Les installations ne peuvent fonctionner efficacement que pendant 4 à 5 mois par an. Il n'est donc pas possible de remplacer toute l’énergie basée sur des générateurs diesel par des cellules solaires.
@@ -100,7 +100,7 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/wind-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte du vents").img-zoom
+                img(:src="require('../assets/img/wind-map.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Carte du vents").img-zoom
                 p.source
                     a(href="https://ozlib.com/897401/fizika/ustoychivost_atmosfery_protsessy_rasseivaniya" target="_blank" rel="noreferrer") Source
                 p.post La Russie possède le plus grand potentiel éolien du monde.
@@ -112,7 +112,7 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/geo-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de la geothermie").img-zoom
+                img(:src="require('../assets/img/geo-map.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de la geothermie").img-zoom
                 p.source
                     a(href="https://lektsii.org/6-47909.html" target="_blank" rel="noreferrer") Source
                 p.post Dans de nombreuses régions du pays (la partie européenne de la Russie, la Sibérie, l'Extrême-Orient), il existe des réserves de fluides géothermiques chauds (50-200oC, 200-3000km).
@@ -123,12 +123,12 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/hydro-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'hydroenergie").img-zoom
+                img(:src="require('../assets/img/hydro-map.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de l'hydroenergie").img-zoom
                 p.source
                     a(href="http://aenergy.ru/1524" target="_blank" rel="noreferrer") Source
                 p.post Le potentiel économiquement réalisable de l'hydroélectricité est près de cinq fois supérieur à la capacité actuelle en exploitation, en particulier dans la partie orientale de la Sibérie. Pour les petites centrales hydroélectriques, le plus grand potentiel se trouve dans les parties centrale et orientale du pays.
                 p.post Le nord de la Russie dispose d'importantes ressources marémotrices. La mer Blanche et la mer d'Okhotsk ont des marées parmi les plus hautes du monde, atteignant plus de 10 mètres.
-                img(:src="require('../assets/img/wave-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de marees").img-zoom
+                img(:src="require('../assets/img/wave-map.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Carte de marees").img-zoom
                 p.source
                     span(style="font-size: 85%; font-weight: light") La mer Blanche
                     br
@@ -140,7 +140,7 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
-                img(:src="require('../assets/img/pellet-map.png')" data-action="zoom" width="100%" style="margin: auto" alt="Marche des pellets").img-zoom
+                img(:src="require('../assets/img/pellet-map.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Marche des pellets").img-zoom
                 p.source
                     a(href="https://epc.bioenergyeurope.org/about-pellets/pellets-statistics/world-pellet-map/" target="_blank" rel="noreferrer") Source
                 p.post La Russie possède un cinquième de la superficie forestière mondiale. Une grande partie de cette surface se trouve en Sibérie. Le pays dispose donc de riches ressources pour la bioénergie sous toutes ses formes - des produits forestiers et de la tourbe aux déchets agricoles. Aujourd'hui, la Russie est devenue le cinquième producteur de pellets au monde, et le troisième exportateur de granulés de bois vers l'UE (environ 0,9 mégatonnes, Mt), après le Canada (1,6 Mt) et les États-Unis (1,9 Mt)
@@ -167,14 +167,32 @@
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs5 md4 flat)
                 //Здесь раздел сократится, тк многое я проиллюстрирую и покажу картинкой
-                p.post Une des stratégies d'utilisation des meilleures ressources éoliennes de la Russie, situées sur la côte pacifique, c`est l`exportation d'électricité vers la Chine. Outre la Chine, il est possible d'exporter de l’Energie vers l'Europe. Cela pourrait aider l'UE à atteindre plus rapidement ses objectifs en matière d'énergies renouvelables, et la Russie pourrait bénéficier de l'émergence de l'industrie locale.
-                    p.post Le développement des technologies d'énergies renouvelables peut contribuer à la croissance économique, en créant des activités et des emplois.
+                p.post
+                    span Une des stratégies d'utilisation des meilleures ressources éoliennes de la Russie, situées sur la côte pacifique, c`est l`exportation d'électricité vers la Chine. Outre la Chine, il est possible d'exporter de l’Energie vers l'Europe. Cela pourrait aider l'UE à atteindre plus rapidement ses objectifs en matière d'énergies renouvelables, et la Russie pourrait
+                    b  bénéficier de l'émergence de l'industrie locale.
+                p.post
+                    span Le développement des technologies d'énergies renouvelables peut contribuer à la
+                    b  croissance économique,
+                    span  en créant des activités et des emplois.
                 p.post Par exemple, l'industrie hydroélectrique russe emploie aujourd'hui plus de 65 000 personnes, ce qui en fait le cinquième plus gros employeur au monde. Avec une augmentation de la part des SER, l'emploi total du secteur pourrait atteindre 1 million de personnes d'ici 2030.
-                p.post Par ailleurs, autour de chaque technologie d'énergie renouvelable, il existe tout un système de production et de vente qui crée de nombreuses opportunités commerciales.
-                p.post Avec la diffusion des énergies renouvelables, la Russie renforcerait son potentiel scientifique.
+                p.post
+                    span Par ailleurs, autour de chaque technologie d'énergie renouvelable, il existe tout un système de production et de vente qui
+                    b  crée de nombreuses opportunités commerciales.
+                p.post
+                    span Avec la diffusion des énergies renouvelables, la Russie
+                    b  renforcerait son potentiel scientifique.
                 p.post Le pays pourrait produire des équipements pour l'utilisation des SER et devenir un exportateur compétitif. Or, leur élaboration prend du temps et peut être coûteuse. Par conséquent, la Russie pourrait opter pour l'importation des équipements et des technologies. Cependant, l`importation créerait également une dépendance et augmenterait le coût des services.
-                p.post Par rapport aux énergies fossiles, les énergies renouvelables peuvent apporter des avantages environnementaux importants, notamment, une baisse considérable de la pollution atmosphérique.
-                p.post En outre, la promotion de l’énergie durable pourrait diversifier le bilan énergétique du pays, réduire les coûts d'approvisionnement en énergie dans des régions éloignées et aider la Russie à respecter ses obligations internationales, comme celles recommandées (imposees ?) par la COP 21.
+                p.post
+                    span Par rapport aux énergies fossiles, les énergies renouvelables peuvent
+                    b  apporter des avantages environnementaux importants,
+                    span  notamment, une baisse considérable de la pollution atmosphérique.
+                p.post
+                    span En outre, la promotion de l’énergie durable pourrait
+                    b  diversifier le bilan énergétique du pays, réduire les coûts de l'énergie
+                    span  dans des régions éloignées et aider la Russie à respecter ses
+                    b  obligations internationales,
+                    span  comme celles recommandées par la COP 21.
+                p.post En définitive, à ce jour les SER en Russie sont sous-développées, principalement en raison de ses richesses naturelles et son étendue. Mais la transition énergétique doit être mise en place pour que le pays soit prêt à relever les défis écologiques actuelles et à venir. Et l’expérience du Canada nous montre, que c’est faisable.
                 p.headline.text-center(style="font-family: 'Candara'!important") Le monde dans dix ans..?
                 v-layout.justify-center
                     video(:width="isMobile ? '100%' : '50%'" autoplay loop)
@@ -251,8 +269,8 @@
         }
 
         get imgNum() {
-            let num = Math.floor(Math.random() * Math.floor(5));  // 0-4
-            return "1-" + num + ".png"
+            let num = Math.floor(Math.random() * Math.floor(7));  // 0-6
+            return "1-" + num + ".webp"
         }
 
 
