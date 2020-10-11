@@ -1,8 +1,8 @@
 <template lang="pug">
     v-layout(column  style="background-color: #f5f6f8;")
-        v-parallax(row, :src="require('../assets/img/' + imgNum)", :height="isMobile ? '660' : '790'", id="parallax1" :style="isMobile ? 'height: 700px' : 'height: 840px'")
-            v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100%;")
-                v-layout(style="text-align: center; bottom: 25%; position: absolute; left: 0; right: 0;" wrap)
+        v-parallax(row, :src="require('../assets/img/' + imgNum)", id="parallax1" style="height: 100vh")
+            v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100vh")
+                v-layout(style="text-align: center; bottom: 30vh; position: absolute; left: 0; right: 0;" wrap)
                     v-spacer
                     v-flex(xs12 md10 style="text-align: center")
                         span.page-title {{$t('home.title')}}
@@ -255,6 +255,29 @@
             return "1-" + num + ".png"
         }
 
+        get image() {
+
+        }
+
+        fixParallax(offset: number): void {
+            let parallax = document.getElementById("parallax1") as HTMLElement;
+            let parallaxChild = parallax.firstChild as HTMLElement;
+            let image = parallaxChild.firstChild as HTMLImageElement;
+            let changes = offset + "px;";
+            image.setAttribute("style", "top: " + changes);
+        }
+
+        mounted(): void {
+            let imgHeight = 1280;
+            let height = 500;
+            let percentScrolled = (window.innerHeight - window.pageYOffset) / (height + window.innerHeight);
+            let parallaxDist = imgHeight - height;
+            let offset = -1.1 * Math.round(parallaxDist * percentScrolled);
+            console.log(offset);
+            this.fixParallax(offset);
+        }
+
+
         // Array will be automatically processed with visualization.arrayToDataTable function
         map1Data: object = [
             ['Country', 'Popularity'],
@@ -290,20 +313,21 @@
                 'Renouvelables'],
             data: [100864, 99921, 17016, 26346, 33752, 13686, 2826]
         };
+
+        @Watch("image")
+        onChange() {
+            let imgHeight = 1280;
+            let height = 500;
+            let percentScrolled = (window.innerHeight - window.pageYOffset) / (height + window.innerHeight);
+            let parallaxDist = imgHeight - height;
+            let offset = -1.1 * Math.round(parallaxDist * percentScrolled);
+            this.fixParallax(offset);
+        }
+
     }
 </script>
 
 <style>
-    .v-parallax__image-container:after {
-        position: absolute;
-        box-shadow: inset 0px -66px 38px 0px rgba(0, 0, 0, 0.77);
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: "";
-    }
-
     .font {
         font-family: "TTSupermolotNeue" !important;
         font-weight: 600;
@@ -390,5 +414,9 @@
     }
     #summary {
         width: 100vw!important;
+    }
+    .v-parallax__image-container > img {
+        height: 120vh;
+        display: block;
     }
 </style>
