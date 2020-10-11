@@ -255,9 +255,6 @@
             return "1-" + num + ".png"
         }
 
-        get image() {
-
-        }
 
         fixParallax(offset: number): void {
             let parallax = document.getElementById("parallax1") as HTMLElement;
@@ -313,16 +310,6 @@
                 'Renouvelables'],
             data: [100864, 99921, 17016, 26346, 33752, 13686, 2826]
         };
-
-        @Watch("image")
-        onChange() {
-            let imgHeight = 1280;
-            let height = 500;
-            let percentScrolled = (window.innerHeight - window.pageYOffset) / (height + window.innerHeight);
-            let parallaxDist = imgHeight - height;
-            let offset = -1.1 * Math.round(parallaxDist * percentScrolled);
-            this.fixParallax(offset);
-        }
 
     }
 </script>
