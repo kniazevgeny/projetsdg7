@@ -11,7 +11,7 @@
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
             v-card.block-text(color="#fff" xs10 md4 flat)
-                p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux de l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
+                p.post L'utilisation des combustibles fossiles ou de charbon est la façon la plus simple de produire de l'énergie, car il s'agit d'un processus déjà bien établi. En même temps, les articles sur l'énergie écrivent que pour être respectueux envers l'environnement, il est nécessaire de développer des sources d'énergie renouvelables, mais qu'il est difficile de le réaliser.
                 p.post Découvrons à quel point cela est vrai pour la Russie et le Canada.
                 p.post
                     span En 2017 
@@ -23,7 +23,7 @@
                     a(href="https://www.iea.org/" target="_blank" rel="noreferrer") Source
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
                 p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau du Canada dans le domaine d`énergie durable ou renouvelable.
-                p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
+                p.post Comme leur nom l’indique, il s’agit des sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
                 img(:src="require('../assets/img/renouvelables-explained.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Renouvelables: une schema simple").img-zoom
                 p.post
                     b L'énergie solaire
@@ -33,22 +33,22 @@
                     span  produisent de l'énergie à partir du déplacement des masses d’air. Le vent souffle, les pales se tournent, et la lampe s`allume !
                 p.post
                     b La biomasse
-                    span  est la matière organique d'origine végétale, animale, ou bactérienne, utilisable comme source d'énergie. Cette énergie peut en être extraite par combustion directe (ex : bois), ou par combustion après des transformations chimiques. Trois modes de valorisations de la biomasse (co)existent : thermique, chimique et biochimique. La bioénergie peut devenir une source de chaleur, d'électricité ou de carburant
+                    span  est la matière organique d'origine végétale, animale, ou bactérienne, utilisée comme source d'énergie. Cette énergie peut en être extraite par combustion directe (ex : bois), ou par combustion après des transformations chimiques. Trois modes de valorisations de la biomasse (co)existent : thermique, chimique et biochimique. La bioénergie peut devenir une source de chaleur, d'électricité ou de carburant
                 p.post
                     b L'énergie hydraulique
                     span  permet de fabriquer de l'électricité grâce à la force de l'eau qui dépend soit de la hauteur de la chute d'eau, soit du débit des fleuves et des rivières
-                p.post Quant a
-                    b  l`energie geothermique
+                p.post Quant à
+                    b  l`énergie géothermique
                     span , elle ne dépend pas des conditions atmosphériques - il s’agit de l'extraction de l'énergie contenue dans le sol. Cette chaleur résulte de la désintégration radioactive des atomes fissiles contenus dans les roches.
             v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Comparaison de l'utilisation des ressources en Russie et au Canada
         v-card(class="hidden-md-and-up" flat style="width: 100%; padding: none")
             v-window(v-model="windowSummary")
                 v-window-item.text-center(style="position: absolute;")
-                    p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
+                    p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`électricité par source en Russie
                     Doughnut_summary#summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data")
                 v-window-item.text-center(style="position: absolute;")
-                    p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source au Canada
+                    p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`électricité par source au Canada
                     Doughnut_summary#summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" )
             v-card-actions.justify-center
                 v-item-group.text--center(v-model='windowSummary', mandatory='')
@@ -104,7 +104,7 @@
                 p.post La Russie possède le plus grand potentiel éolien du monde.
                 p.post Dans les régions du nord de la Russie, ainsi que dans le sud-ouest et en Extrême-Orient soufflent des vents, dont la vitesse dépasse facilement 8 m/s à 100 m de hauteur.
                 p.post Théoriquement, le potentiel économique éolien pourrait atteindre 30 % de la production d'électricité du pays, alors qu`à ce jour, la part des parcs éoliens en Russie est inférieure à 0,1 % de la production totale d'électricité (APREN, 2016).
-                p.post Plusieurs facteurs entravent le développement du parc éolien. C`est, d`abord, le fait que la capacite de production du parc éolien est variable. Ensuite, l`l’installation des éoliennes à grande échelle nécessitent de vastes terrains. Même en Russie, les investisseurs sont confrontés à des problèmes liés au prix élevé des terrains. Enfin, en raison des obstacles administratifs, il n'est pas facile de transformer juridiquement des terres agricoles en terres industrielles.
+                p.post Plusieurs facteurs entravent le développement du parc éolien. C`est, d`abord, le fait que la capacité de production du parc éolien est variable. Ensuite, l`l’installation des éoliennes à grande échelle nécessitent de vastes terrains. Même en Russie, les investisseurs sont confrontés à des problèmes liés au prix élevé des terrains. Enfin, en raison des obstacles administratifs, il n'est pas facile de transformer juridiquement des terres agricoles en terres industrielles.
             v-flex(xs0 sm1 md4 lg6)
         h2.headlinee.mt-7 Géothermie
         v-layout(justify="space-around")
@@ -264,7 +264,6 @@
             return "1-" + num + ".webp"
         }
 
-
         fixParallax(offset: number): void {
             let parallax = document.getElementById("parallax1") as HTMLElement;
             let parallaxChild = parallax.firstChild as HTMLElement;
@@ -279,6 +278,7 @@
             let percentScrolled = window.innerHeight / (height + window.innerHeight);
             let parallaxDist = imgHeight - height;
             let offset = -1.1 * Math.round(parallaxDist * percentScrolled);
+            console.log(percentScrolled);
             console.log(offset);
             this.fixParallax(offset);
         }
