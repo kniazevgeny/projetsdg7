@@ -2,12 +2,11 @@
     v-layout(column  style="background-color: #f5f6f8;")
         v-parallax(row, :src="require('../assets/img/' + imgNum)", id="parallax1" style="height: 100vh")
             v-card(flat, style="background: rgba(0, 0, 0, 0); width: 90%; margin-left: auto; margin-right: auto; height: 100vh")
-                v-layout(style="text-align: center; bottom: 30vh; position: absolute; left: 0; right: 0;" wrap)
+                v-layout(style="text-align: center; position: absolute; left: 0; right: 0;", :style="isMobile ? 'bottom: 20vh;' : 'bottom: 30vh;'" wrap)
                     v-spacer
                     v-flex(xs12 md10 style="text-align: center")
                         span.page-title {{$t('home.title')}}
                     v-spacer
-                    // GChart(type="GeoChart" :data="map1Data" :options="map1Options" :settings="{mapsApiKey: apiKey, packages: ['geochart']}" style="width: 1000px; margin: 0px auto; background: rgba(0, 0, 0, 0); fill: #000") a
         h2.headlinee.mt-7 Développement durable
         v-layout(justify="space-around")
             v-flex(xs0 sm1 md4 lg6)
@@ -49,7 +48,7 @@
                     p.font.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Russie
                     Doughnut_summary#summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data")
                 v-window-item.text-center(style="position: absolute;")
-                    p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source en Canada
+                    p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;") Production de l`electricite par source au Canada
                     Doughnut_summary#summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" )
             v-card-actions.justify-center
                 v-item-group.text--center(v-model='windowSummary', mandatory='')
@@ -68,9 +67,8 @@
                             Doughnut_summary(:labels="Doughnut_summaryRussiaData.labels" :data="Doughnut_summaryRussiaData.data" style="width: 25vw; position: relative")
                         v-flex(column lg2).text-center
                         v-flex(column lg6).text-center
-                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;").mt-0 en Canada
+                            p.headline(style="font-family: 'TTSupermolotNeue' !important; font-weight: 600;").mt-0 au Canada
                             Doughnut_summary(:labels="Doughnut_summaryCanadaData.labels" :data="Doughnut_summaryCanadaData.data" style="width: 25vw; position: relative")
-                v-btn(text='', @click='next')
                 br
                 p.post Parmi les énergies renouvelables dans le système énergétique russe l'hydroélectricité et la bioénergie occupent une place importante. Le reste de l'énergie renouvelable est réparti entre l'énergie solaire, l'énergie éolienne et l'énergie géothermique.
             v-flex(xs0 sm1 md4 lg6)
@@ -235,34 +233,16 @@
     import * as store from "../plugins/store";
     import Component from "vue-class-component";
     import {i18n} from "../plugins/i18n";
-    // @ts-ignore
-    import {GChart} from 'vue-google-charts'
     import Doughnut_summary from "../components/Doughnut_summary.vue";
     import {Watch} from "vue-property-decorator";
 
-
-    Vue.component("GChart", GChart);
     Vue.component("Doughnut_summary", Doughnut_summary);
 
     @Component
     export default class Home extends Vue {
-
-        apiKey = "AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE";
         windowSummary: number = 0;
         length = 2;
         n = 0;
-
-        next() {
-            this.windowSummary = this.windowSummary + 1 === this.length
-                ? 0
-                : this.windowSummary + 1
-        };
-
-        prev() {
-            this.windowSummary = this.windowSummary - 1 < 0
-                ? this.length - 1
-                : this.windowSummary - 1
-        };
 
         get isMobile() {
             return window.innerWidth < 600;
@@ -285,29 +265,13 @@
         mounted(): void {
             let imgHeight = 1280;
             let height = 500;
-            let percentScrolled = (window.innerHeight - window.pageYOffset) / (height + window.innerHeight);
+            let percentScrolled = window.innerHeight / (height + window.innerHeight);
             let parallaxDist = imgHeight - height;
             let offset = -1.1 * Math.round(parallaxDist * percentScrolled);
             console.log(offset);
             this.fixParallax(offset);
         }
 
-
-        // Array will be automatically processed with visualization.arrayToDataTable function
-        map1Data: object = [
-            ['Country', 'Popularity'],
-            ['Germany', 200],
-            ['United States', 300],
-            ['Brazil', 400],
-            ['Canada', 500],
-            ['France', 600],
-            ['RU', 700]
-        ];
-        map1Options: object = {
-            backgroundColor: {fill: 'transparent'},
-            colorAxis: {colors: ['yellow', 'red']},
-            mapsApiKey: 'AIzaSyDdRmGhfE2hBf_DODRLnOH2Ww68B94h7bE'
-        };
         Doughnut_summaryRussiaData: object = {
             labels: ['Gaz naturel',
                 'Pétrole',
@@ -423,5 +387,8 @@
     .v-parallax__image-container > img {
         height: 120vh;
         display: block;
+    }
+    .v-parallax__content {
+        mix-blend-mode: lighten;
     }
 </style>

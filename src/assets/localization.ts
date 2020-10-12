@@ -17,7 +17,7 @@ export const messages = {
     title: 'Frontend template',
     notFound: 'Page not found',
     home: {
-      title: "La Russie, peut-elle atteindre le niveau du Canada en domaine énergie durable?"
+      title: "La Russie, peut-elle atteindre le niveau du Canada dans le domaine d’énergie durable?"
     }
   },
 }
