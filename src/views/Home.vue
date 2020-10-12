@@ -22,7 +22,7 @@
                 p.source
                     a(href="https://www.iea.org/" target="_blank" rel="noreferrer") Source
                 p.post Le Canada se trouve dans l'hémisphère nord et à peu près sur la même latitude que la Russie. Ce qui fait ses zones climatiques similaires aux nôtres.
-                p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau de la Canada dans le domaine d`énergie durable ou renouvelable.
+                p.post Essayons de comprendre, comment la Russie pourrait atteindre le niveau du Canada dans le domaine d`énergie durable ou renouvelable.
                 p.post Comme leur nom l’indique, il s’agit de sources qui se renouvellent et ne s’épuiseront donc jamais à l’échelle du temps humain !
                 img(:src="require('../assets/img/renouvelables-explained.webp')" data-action="zoom" width="100%" style="margin: auto" alt="Renouvelables: une schema simple").img-zoom
                 p.post
