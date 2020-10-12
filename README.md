@@ -1,6 +1,6 @@
 # Russie renouvelables
 
-This is frontend of the project "Renouvelables en Russie". Written in Vue.js with Vuetify and Vuex.
+This is frontend of the project "Russie renouvelables". Written in Vue.js with Vuetify and Vuex.
 
 
 ## Project setup
