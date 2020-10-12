@@ -209,7 +209,7 @@
                     v-flex(xs4)
                         v-card(flat color="transparent")
                             center
-                              v-img(:src="require('../assets/img/team-design.webp')" style="border-radius: 50%; width: 80%" alt="Designer principal")
+                                v-img(:src="require('../assets/img/team-design.webp')" style="border-radius: 50%; width: 80%" alt="Designer principal")
                             center(style="font-size: 130%;") Designer principal
                     v-flex(xs4)
                         v-card(flat color="transparent")
@@ -222,9 +222,20 @@
                                 v-img(:src="require('../assets/img/team-dev.webp')" style="border-radius: 50%; width: 80%" alt="Développeur principal")
                             center(style="font-size: 130%;") Développeur principal
             v-flex(xs0 sm2 lg3)
-
-
-
+        v-footer(dark height="auto" width="100vw" style="padding-top: 5px;" color="#252525").mt-12
+            v-card(flat tile class="white--text text-center" width="100vw" color="#252525")
+                v-card-text.pb-0.mb-0
+                    v-btn(icon large width=70 height=70).ma-2
+                        img(:src="require('../assets/img/vk.webp')" alt="me at vk" height="70px" width="70px" onclick="window.open('https://vk.com/eugene.kniazev')")
+                    v-btn(icon large width=70 height=70).ma-2
+                        img(:src="require('../assets/img/instagram.webp')" alt="me at instagram" height="70px" width="70px" onclick="window.open('https://www.instagram.com/eugene.kniazev/')")
+                    v-btn(icon large width=70 height=70).ma-2
+                        img(:src="require('../assets/img/telegram.webp')" alt="me at telegram" height="70px" width="70px" onclick="window.open('https://t.me/kniazevgeny')")
+                p(style="color: #fff ; font-size: 20px").subtitle.mt-9
+                    span(style="font-weight: 500").pb-3 Le code source de ce site est publié à github:
+                    br
+                    v-btn(icon large width=70 height=70).ma-2
+                        img( :src="require('../assets/img/github.webp')" alt="github source code" height="70px" width="70px" onclick="window.open('https://github.com/kniazevgeny/projetsdg7')")
 
 
 </template>
@@ -312,7 +323,8 @@
         clear: both;
         box-sizing: border-box;
     }
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
         .block-text {
             padding: 40px 30px;
         }
@@ -336,26 +348,31 @@
         text-align: center;
         color: #444;
     }
+
     .v-window__container {
-        height: 515px!important;
+        height: 515px !important;
     }
+
     .v-window__container--is-active {
-        height: 515px!important;
+        height: 515px !important;
         padding: 0;
         margin: 0;
     }
+
     .source {
         text-align: center;
         padding-top: 0;
         margin-top: 0;
     }
+
     .source a {
         font-weight: 300;
         font-family: 'Candara';
         font-style: italic;
-        color: #999!important;
+        color: #999 !important;
         text-decoration: underline;
     }
+
     span.page-title {
         width: 100%;
         font-size: 3rem;
@@ -363,31 +380,38 @@
         display: inline;
         background-color: white;
         text-align: center;
-        font-family: 'TTSupermolotNeue',sans-serif;
+        font-family: 'TTSupermolotNeue', sans-serif;
     }
-    @media screen and (max-width: 600px){
+
+    @media screen and (max-width: 600px) {
         span.page-title {
             font-size: 2.5rem;
         }
+
         .headlinee {
             font-size: 2.2rem;
         }
     }
-    @media screen and (min-width: 1000px){
+
+    @media screen and (min-width: 1000px) {
         span.page-title {
             font-size: 4.5rem;
         }
+
         .headlinee {
             font-size: 3.5rem;
         }
     }
+
     #summary {
-        width: 100vw!important;
+        width: 100vw !important;
     }
+
     .v-parallax__image-container > img {
         height: 120vh;
         display: block;
     }
+
     .v-parallax__content {
         mix-blend-mode: lighten;
     }
