@@ -14,7 +14,7 @@
     "axios": "^0.21.2",
     "chart.js": "^2.9.4",
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pug": "^3.0.1",
     "pug-plain-loader": "^1.0.0",
     "vue": "^2.6.10",
